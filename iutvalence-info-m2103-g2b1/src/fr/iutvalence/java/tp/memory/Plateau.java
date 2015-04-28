@@ -19,8 +19,8 @@ public class Plateau
 	/**
 	 * nombre de colonnes et de lignes de la grille déterminées par le nombre de paires choisies par le joueur
 	 */
-	private int NombreLigne;
-	private int NombreColonne;
+	private int NombreLigne = NOMBRE_LIGNES_DEFAUT;
+	private int NombreColonne = NOMBRE_COLONNES_DEFAUT;
 	
 	/**
 	 * Sa taille dépend du nombre de paires choisies.

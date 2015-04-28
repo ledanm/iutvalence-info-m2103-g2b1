@@ -35,7 +35,7 @@ public class PartieDeMemory
 	 */
 	public PartieDeMemory()
 	{
-		
+		this.plateau = new Plateau;
 	}
 	
 

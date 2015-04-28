@@ -15,7 +15,7 @@ public class Carte
 	/**
 	 * caractère contenu dans la carte, visible une fois retournée
 	 */
-	private final static char ContenuCarte;
+	private char ContenuCarte;
 	
 	
 }
