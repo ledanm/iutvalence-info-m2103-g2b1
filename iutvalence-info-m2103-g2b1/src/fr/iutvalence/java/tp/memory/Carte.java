@@ -11,11 +11,10 @@ public class Carte
 	/**
 	 * carte retournée ou non
 	 */
-	private boolean Retourner;
+	private boolean estRetournee;
 	/**
-	 * caractère contenu dans la carte, visible une fois retournée
+	 * numéro de la paire à laquelle appartient la carte
 	 */
-	private char ContenuCarte;
-	
+	private int numeroDePaire;
 	
 }

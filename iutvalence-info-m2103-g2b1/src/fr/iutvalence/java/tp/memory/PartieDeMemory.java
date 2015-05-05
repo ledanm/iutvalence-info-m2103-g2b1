@@ -20,14 +20,19 @@ public class PartieDeMemory
 	/**
 	 * nombre de joueurs max
 	 */
-	public final static int NB_JOUREURS_MAX = 4;
+	public final static int NB_JOUEURS_MAX = 4;
 	
 	/**
 	 * nombre de paires choisies par le joueur
 	 */
 	private final int NombreDePairesChoisies;
-	
+	/**
+	 * correspond au plateau de jeu
+	 */
 	private Plateau plateau;
+	/**
+	 * joueur(s) listé(s) dans un tableau
+	 */
 	private Joueur[] joueurs;
 	
 	/**
@@ -35,17 +40,64 @@ public class PartieDeMemory
 	 */
 	public PartieDeMemory()
 	{
-		this.plateau = new Plateau;
+		/**
+		 * initialisation du Plateau
+		 */
+		this.plateau = new Plateau();
+		/**
+		 * initialisation du ou des joueurs
+		 */
+		this.joueurs = new Joueur[NB_JOUEURS_PAR_DEFAUT];
+		/**
+		 * affectation du nombre de paires de cartes par défaut au nombre de cartes mis en jeu
+		 */
+		this.NombreDePairesChoisies = NB_DE_PAIRES_PAR_DEFAUT;
 	}
-	
 
-	
 	
 	/**
 	 * lancement de la partie de memory
 	 */
 	public boolean jouer()
 	{
+		/**
+		 * Affichage du plateau à l'écran
+		 */
+		
+		/**
+		 * Affichage des scores des joueurs
+		 */
+		
+		/**
+		 * Affichage des tours de jeu des joueurs
+		 */
+		
+		/**
+		 * Lancement de la partie
+		 */
+		
+		/**
+		 * Obtention des positions des deux cartes choisies 
+		 * Les cartes sont retournées
+		 */
+		
+		/**
+		 * Comparaison des deux cartes
+		 */
+		
+		/**
+		 * Si les cartes sont les mêmes, elles sont retirées du jeu et le joueur gagne 1 point
+		 * Sinon les cartes sont retournés à leurs positions d'origine
+		 */
+		
+		/**
+		 * Changement de joueur
+		 */
+		
+		/**
+		 * Si il n'y a plus de cartes sur le plateau, les scores des joueurs sont comparés
+		 * le joueur ayant le meilleur score est déclaré vainqueur
+		 */
 		
 	}
 }
