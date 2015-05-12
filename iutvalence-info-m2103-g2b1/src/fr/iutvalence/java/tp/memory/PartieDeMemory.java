@@ -63,7 +63,7 @@ public class PartieDeMemory
 		/**
 		 * Affichage du plateau à l'écran
 		 */
-		
+		this.Plateau = new Carte[][]
 		/**
 		 * Affichage des scores des joueurs
 		 */
@@ -81,15 +81,13 @@ public class PartieDeMemory
 		 * Les cartes sont retournées
 		 */
 		
+				
 		/**
-		 * Comparaison des deux cartes
+		 * Comparaison des cartes : 
+		 * - si les cartes sont les mêmes, elles sont retirées du jeu et le joueur gagne 1 point
+		 * - sinon les cartes sont retournés à leurs positions d'origine
 		 */
-		
-		/**
-		 * Si les cartes sont les mêmes, elles sont retirées du jeu et le joueur gagne 1 point
-		 * Sinon les cartes sont retournés à leurs positions d'origine
-		 */
-		
+	
 		/**
 		 * Changement de joueur
 		 */

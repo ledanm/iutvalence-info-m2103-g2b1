@@ -24,7 +24,7 @@ public class Plateau
 	/**
 	 * La taille du Plateau est déterminé en fonction du nombre de paires du jeu
 	 */
-	public Plateau() 
+	public Plateau()  
 	{
 		/**
 		 * Nombre de lignes du plateau contenant les cartes

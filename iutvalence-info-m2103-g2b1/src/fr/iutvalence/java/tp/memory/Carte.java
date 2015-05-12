@@ -17,4 +17,8 @@ public class Carte
 	 */
 	private int numeroDePaire;
 	
+	public boolean PositionCarte()
+	{
+		return equals(position);
+	}
 }
