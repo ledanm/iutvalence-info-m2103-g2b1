@@ -58,12 +58,18 @@ public class PartieDeMemory
 	/**
 	 * lancement de la partie de memory
 	 */
-	public boolean jouer()
+	public void jouer()
 	{
+		/**
+		 * Mise en place des cartes sur le plateau
+		 */
+		
+		
 		/**
 		 * Affichage du plateau à l'écran
 		 */
-		this.Plateau = new Carte[][]
+		plateau.remplirPlateau();
+		System.out.println(plateau);
 		/**
 		 * Affichage des scores des joueurs
 		 */

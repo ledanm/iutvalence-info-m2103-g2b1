@@ -17,8 +17,28 @@ public class Carte
 	 */
 	private int numeroDePaire;
 	
-	public boolean PositionCarte()
+	public Carte(int numero)
 	{
-		return equals(position);
+		this.estRetournee=flase;
+		this.numeroDePaire=numero;
+	}
+	
+	@Override
+	/**
+	 * Cette fonction liste les ca pour déterminer si elles sont retournées ou non
+	 */
+	public String toString()
+	{
+		String toReturn="";
+		if (estRetournee)
+		{
+			String numeroCarte = String.valueOf(numeroDePaire); 
+			toReturn=numeroCarte;
+		}
+		else
+		{
+			toReturn="  ";
+		}
+		return toReturn;
 	}
 }
