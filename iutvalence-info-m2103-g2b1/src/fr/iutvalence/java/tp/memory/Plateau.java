@@ -1,5 +1,5 @@
 package fr.iutvalence.java.tp.memory;
-
+import java.lang.Math; 
 import java.util.Arrays;
 
 /**
@@ -41,7 +41,7 @@ public class Plateau
 		 */
 		this.cartes = new Carte[nombreDeLignes][nombreDeColonnes];
 	}
-	@Override
+	
 	/**
 	 * Cette fonction liste les cases du plateau pour y afficher les cartes
 	 */
@@ -62,20 +62,53 @@ public class Plateau
 		return toReturn;
 	}
 	
+	/**
+	 * méthode qui permet d'afficher les cartes (sous la forme de paires de numéros)
+	 * du plateau de jeu
+	 */
 	public void remplirPlateau()
 	{
+		int chiffre=0;
 		for (int column=0;column<Plateau.NOMBRE_COLONNES_DEFAUT;column++)
 		{
 			for (int lane=0;lane<Plateau.NOMBRE_LIGNES_DEFAUT;lane++)
 			{					
 				/**
-				 * lister les cases du tableau en additionnant le numéro de ligne et de colonne,
-				 * et tout les résultats paires ajouter 1 au numéro de la paire posé.
-				 * Ensuite, mélanger les cartes en choisissant des positions aléatoires et les permutter.
+				 * condition permettant de créer les paires de cartes. Elles sont posées 
+				 * côte à côte. 
 				 */
-				cartes[column][lane]=new Carte(5);
+				if (lane%2==0)
+					chiffre++;
+					cartes[column][lane]=new Carte(chiffre);
+					
 			}
+			
 		}
+		/**
+		 * boucle permettant de mélanger les cartes via la fonction Random
+		 */
+		for (int boucle=0;boucle<200;boucle++)
+		{
+			int ligne1 = (int) (Math.random() * 6);
+			int ligne2 = (int) (Math.random() * 6);
+			int colonne1 = (int) (Math.random() * 6);
+			int colonne2 = (int) (Math.random() * 6);
+		
+			Carte intermediaire;
+		
+			intermediaire= cartes[colonne1][ligne1];
+			cartes[colonne1][ligne1]= cartes[colonne2][ligne2];
+			cartes[colonne2][ligne2]=intermediaire;
+		}
+		
+	}
+	public Carte[][] getCartes() 
+	{
+		return cartes;
+	}
+	public void setCartes(Carte[][] cartes) 
+	{
+		this.cartes = cartes;
 	}
 }
 		

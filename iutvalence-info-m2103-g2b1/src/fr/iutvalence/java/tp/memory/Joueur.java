@@ -14,6 +14,13 @@ public class Joueur
 	 */
 	private int NombrePairesTrouvees;
 	
-	
+	/**
+	 * méthode qui permet de choisir une carte grace à une intersection de colonne et de ligne
+	 * 
+	 */
+	public void retournerCarte(int colonne,int ligne,Plateau plateau)
+	{ 
+		plateau.getCartes()[colonne][ligne].retournerCarte();
+	}
 	
 }

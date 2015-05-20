@@ -33,7 +33,8 @@ public class PartieDeMemory
 	/**
 	 * joueur(s) listé(s) dans un tableau
 	 */
-	private Joueur[] joueurs;
+	private Joueur joueur1=new Joueur();
+	private Joueur joueur2= new Joueur();
 	
 	/**
 	 * constucteur de la partie de memory
@@ -44,10 +45,8 @@ public class PartieDeMemory
 		 * initialisation du Plateau
 		 */
 		this.plateau = new Plateau();
-		/**
-		 * initialisation du ou des joueurs
-		 */
-		this.joueurs = new Joueur[NB_JOUEURS_PAR_DEFAUT];
+		
+		
 		/**
 		 * affectation du nombre de paires de cartes par défaut au nombre de cartes mis en jeu
 		 */
@@ -70,6 +69,8 @@ public class PartieDeMemory
 		 */
 		plateau.remplirPlateau();
 		System.out.println(plateau);
+		
+		joueur1.retournerCarte(5, 5, plateau);
 		/**
 		 * Affichage des scores des joueurs
 		 */

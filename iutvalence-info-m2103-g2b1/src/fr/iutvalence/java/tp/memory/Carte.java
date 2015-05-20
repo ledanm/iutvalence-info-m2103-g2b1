@@ -19,10 +19,20 @@ public class Carte
 	
 	public Carte(int numero)
 	{
-		this.estRetournee=flase;
+		this.estRetournee=false;
 		this.numeroDePaire=numero;
 	}
 	
+	public int getNumeroDePaire() 
+	{
+		return numeroDePaire;
+	}
+
+	public void setNumeroDePaire(int numeroDePaire)
+	{
+		this.numeroDePaire = numeroDePaire;
+	}
+
 	@Override
 	/**
 	 * Cette fonction liste les ca pour déterminer si elles sont retournées ou non
@@ -40,5 +50,10 @@ public class Carte
 			toReturn="  ";
 		}
 		return toReturn;
+	}
+	
+	public void retournerCarte()
+	{
+		this.estRetournee=true;
 	}
 }
